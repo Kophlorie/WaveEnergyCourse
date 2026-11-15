@@ -1,0 +1,5 @@
+ToIgnore/
+*.asv
+*.fig
+Thumbs.db
+.DS_Store
