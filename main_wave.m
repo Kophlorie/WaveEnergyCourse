@@ -363,7 +363,7 @@ idxS=2:(length(S)-1+rem(N,2));
 idxH=1:length(idxS);
 j=3; Hb=2*sqrt(2*S(idxS)*df);
 fprintf(['H computed from scratch vs using S difference = ',...
-num2str(max(harmonics{j,1}(idxH)-Hb)),' ≈ ',num2str(round(max(harmonics{j,1}(1:end-1)-Hb),2)),'\n']);
+num2str(max(harmonics{j,1}(idxH)-Hb)),' ≈ ',num2str(round(max(harmonics{j,1}(idxH)-Hb),2)),'\n']);
 % Similarly from the opposite point of view, we have:
 Sb=2*(((harmonics{j,1}(idxH))/4).^2)/df; % ~H.^2/(8*df) ≈ Sb=harmonics{j,1}(idxH).^2/(8*df);
 fprintf(['S computed from scratch vs using H_{harm} difference = ',...
